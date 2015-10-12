@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ambient Mode</string>
+    <string name="perm_label_stop_ambient_dream">Stop ambient dream</string>
+    <string name="perm_description_stop_ambient_dream">Packages with this permission can send an intent that will stop the ambient dream and leave the screen turned off</string>
+    <string name="perm_label_receive_ambient_dream_state">Receive ambient dream state</string>
+    <string name="perm_description_receive_ambient_dream_state">Packages with this permission can receive broadcasts sent when the system goes into and out of ambient mode</string>
+</resources>

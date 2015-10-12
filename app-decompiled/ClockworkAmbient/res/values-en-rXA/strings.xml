@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[Åḿɓîéñţ Ḿöðé one two]</string>
+    <string name="perm_label_stop_ambient_dream">[Šţöþ åḿɓîéñţ ðŕéåḿ one two three]</string>
+    <string name="perm_description_stop_ambient_dream">[Þåçķåĝéš ŵîţĥ ţĥîš þéŕḿîššîöñ çåñ šéñð åñ îñţéñţ ţĥåţ ŵîļļ šţöþ ţĥé åḿɓîéñţ ðŕéåḿ åñð ļéåVé ţĥé šçŕééñ ţûŕñéð öƒƒ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]</string>
+    <string name="perm_label_receive_ambient_dream_state">[ŔéçéîVé åḿɓîéñţ ðŕéåḿ šţåţé one two three four]</string>
+    <string name="perm_description_receive_ambient_dream_state">[Þåçķåĝéš ŵîţĥ ţĥîš þéŕḿîššîöñ çåñ ŕéçéîVé ɓŕöåðçåšţš šéñţ ŵĥéñ ţĥé šýšţéḿ ĝöéš îñţö åñð öûţ öƒ åḿɓîéñţ ḿöðé one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.android.wearable.ambient" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-2006643">
+    <permission android:description="@string/perm_description_stop_ambient_dream" android:label="@string/perm_label_stop_ambient_dream" android:name="com.google.android.wearable.permission.STOP_AMBIENT_DREAM" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.wearable.permission.START_DEEP_AMBIENT_RECOGNITION"/>
+    <uses-permission android:name="com.google.android.wearable.READ_SETTINGS"/>
+    <uses-permission android:name="com.google.android.wearable.permission.STOP_AMBIENT_DREAM"/>
+    <permission android:description="@string/perm_description_receive_ambient_dream_state" android:label="@string/perm_label_receive_ambient_dream_state" android:name="com.google.android.wearable.permission.RECEIVE_AMBIENT_DREAM_STATE" android:protectionLevel="signatureOrSystem"/>
+    <application android:allowBackup="false" android:label="@string/app_name">
+        <uses-library android:name="com.google.android.wearable" android:required="true"/>
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name=".AmbientDream" android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name=".AmbientService">
+            <intent-filter>
+                <action android:name="com.google.android.wearable.action.BIND_AMBIACTIVE_DREAM"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.wearable.action.BIND_AMBIACTIVE_ACTIVITY"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

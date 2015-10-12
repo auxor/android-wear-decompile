@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="array" name="doze_brightness_points" id="0x7f020000" />
+    <public type="string" name="app_name" id="0x7f030000" />
+    <public type="string" name="perm_label_stop_ambient_dream" id="0x7f030001" />
+    <public type="string" name="perm_description_stop_ambient_dream" id="0x7f030002" />
+    <public type="string" name="perm_label_receive_ambient_dream_state" id="0x7f030003" />
+    <public type="string" name="perm_description_receive_ambient_dream_state" id="0x7f030004" />
+</resources>
